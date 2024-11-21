@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{report}
+
+% Paquets necessaris
+\usepackage[utf8]{inputenc} % Suport per a accents
+\usepackage[catalan]{babel} % Idioma català
+\usepackage{fancyhdr}       % Capçalera i peu de pàgina
+\usepackage{graphicx}       % Per afegir imatges
+\usepackage{hyperref}       % Enllaços i referències clicables
+\usepackage{amsmath,amssymb}% Matemàtiques
+\usepackage{biblatex}       % Gestió de bibliografia
+\addbibresource{bibliografia.bib} % Fitxer de bibliografia
+
+% Configuració de marges
+\usepackage[a4paper,margin=1in]{geometry}
+
+% Configuració de capçaleres i peus de pàgina
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Pràctiques de [Assignatura]} % Capçalera esquerra
+\fancyhead[R]{[Nom de l'estudiant]}        % Capçalera dreta
+\fancyfoot[C]{\thepage}                    % Número de pàgina centrat
+
+% Portada
+\title{
+    \textbf{Pràctica (...)} \\ 
+    \large Pràctiques d' AO
+}
+\author{Marc Caldas Garrido \\
+    IES Joan Ramis i Ramis\\
+    \texttt{mcaldas20942@iesjoanramis.org}}
+\date{\today}
+
+\begin{document}
+
+% Portada
+\maketitle
+\thispagestyle{empty} % Desactiva la capçalera i peu a la portada
+\newpage
+
+% Índex
+\tableofcontents
+\newpage
+
+% Introducció
+\chapter{Introducció}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+% Desenvolupament
+\chapter{Desenvolupament}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem
+tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\section{Primera part}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem
+tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\subsection{Detalls específics}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem
+tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\section{Segona part}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem
+tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\subsection{Detalls específics}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem
+tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+% Resultats
+\chapter{Resultats}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem
+tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{imatge_exemple.png} % Substitueix amb el nom de la imatge
+    \caption{Exemple de gràfic o resultat.}
+    \label{fig:exemple}
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Columna 1 & Columna 2 & Columna 3 \\ \hline
+        Dada 1 & Dada 2 & Dada 3 \\ \hline
+    \end{tabular}
+    \caption{Exemple de taula.}
+    \label{tab:exemple}
+\end{table}
+
+% Conclusions
+\chapter{Conclusions}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem
+tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+% Bibliografia
+\chapter*{Bibliografia}
+\addcontentsline{toc}{chapter}{Bibliografia} % Afegir a l'índex
+Cita les referències que hagis utilitzat per la pràctica:
+\begin{itemize}
+    \item [1] Autor, Títol, Any.
+    \item [2] Enllaç: \url{https://exemple.com}.
+\end{itemize}
+
+% Si utilitzes BibLaTeX per gestionar referències:
+%\printbibliography
+
+\end{document}

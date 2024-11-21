@@ -1,0 +1,111 @@
+\documentclass[a4paper,12pt]{article}
+
+% Paquets necessaris
+\usepackage[utf8]{inputenc} % Suport per a accents
+\usepackage[catalan]{babel} % Idioma català
+\usepackage{fancyhdr}       % Capçalera i peu de pàgina
+\usepackage{enumitem}       % Llistes personalitzades
+\usepackage{hyperref}       % Enllaços i referències clicables
+\usepackage{graphicx}       % Imatges
+\usepackage[a4paper,margin=1in]{geometry} % Marges
+
+% Configuració de capçaleres i peus de pàgina
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Manual d'ús}               % Capçalera esquerra
+\fancyhead[R]{[Nom del projecte]}        % Capçalera dreta
+\fancyfoot[C]{\thepage}                  % Número de pàgina al peu
+
+% Títol de la portada
+\title{\textbf{Manual d'Ús i Referència} \\ \large Manual AO}
+\author{Autor/a: Marc Caldas Garrido \\ Organització: [Empresa o institució]}
+\date{\today}
+
+\begin{document}
+
+% Portada
+\maketitle
+\thispagestyle{empty} % Desactiva la capçalera i peu de la portada
+\newpage
+
+% Índex
+\tableofcontents
+\newpage
+
+% Introducció
+\section{Introducció}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+
+% Secció 1: Configuració inicial
+\section{Configuració inicial}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+
+\subsection{Requisits previs}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\begin{itemize}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\end{itemize}
+
+\subsection{Passos per a la instal·lació}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\begin{enumerate}
+    \item Descarrega el programari des de \url{https://exemple.com}.
+    \item Executa el fitxer d’instal·lació.
+    \item Completa la configuració inicial seguint les instruccions a pantalla.
+\end{enumerate}
+
+% Secció 2: Ús bàsic
+\section{Ús bàsic}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+
+\subsection{Com iniciar sessió}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\begin{enumerate}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item Fes clic a \textbf{Iniciar Sessió}.
+\end{enumerate}
+
+\subsection{Navegació per l'interfície}
+L'aplicació consta de:
+\begin{itemize}
+    \item \textbf Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item \textbf Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item \textbf Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\end{itemize}
+
+% Secció 3: Resolució de problemes
+\section{Resolució de problemes}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+
+\subsection{Error: No es pot iniciar sessió}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\begin{enumerate}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula \textbf{He oblidat la contrasenya}.
+    \item Contacta amb el suport tècnic a \href{mailto:support@exemple.com}{support@exemple.com}.
+\end{enumerate}
+
+\subsection{L'aplicació no respon}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\begin{itemize}
+    \item TLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+\end{itemize}
+
+% Conclusió
+\section{Conclusió}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula
+
+% Bibliografia
+\section*{Bibliografia}
+\addcontentsline{toc}{section}{Bibliografia}
+\begin{itemize}
+    \item [1] Nom de l’autor/a, \textit{Títol del llibre o article}, Any.
+    \item [2] \url{https://exemple.com}.
+\end{itemize}
+
+\end{document}

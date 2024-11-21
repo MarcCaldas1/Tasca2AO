@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+
+% Paquets necessaris
+\usepackage[utf8]{inputenc} % Suport per a accents
+\usepackage[catalan]{babel} % Idioma català
+\usepackage{graphicx}       % Per imatges (opcional, si cal)
+\usepackage[a4paper,margin=1in]{geometry} % Marges
+\usepackage{caption}        % Per personalitzar títols i peus de taules
+\usepackage{longtable}      % Per taules llargues (opcional)
+\usepackage{booktabs}       % Per millorar l'estètica de les taules
+\usepackage{hyperref}       % Enllaços clicables
+
+% Índex de taules
+\usepackage{tocloft}
+\setlength{\cftbeforeloftitleskip}{0pt}
+\setlength{\cftafterloftitleskip}{10pt}
+
+\begin{document}
+
+% Portada
+\title{\textbf{Document amb Taules} \\ \large Exemple amb Índex de Taules}
+\author{Marc Caldas}
+\date{\today}
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% Índex de taules
+\listoftables
+\newpage
+
+% Introducció
+\section{Introducció}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+% Primera taula
+\section{Primera Taula: Exemple de dades}
+La Taula~\ref{table:exemple1} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|c|r|}
+        \hline
+        \textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} \\ \hline
+        Exemple A & 123 & 45.6 \\ \hline
+        Exemple B & 456 & 78.9 \\ \hline
+        Exemple C & 789 & 12.3 \\ \hline
+    \end{tabular}
+    \caption{ALorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula..}
+    \label{table:exemple1}
+\end{table}
+
+% Segona taula
+\section{Segona Taula: Exemple amb dades categoritzades}
+La Taula~\ref{table:exemple2} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Categoria} & \textbf{Element} & \textbf{Valor} \\ \hline
+        Grup 1 & Element A & 23.5 \\ \hline
+        Grup 1 & Element B & 45.7 \\ \hline
+        Grup 2 & Element C & 78.9 \\ \hline
+        Grup 2 & Element D & 91.2 \\ \hline
+    \end{tabular}
+    \caption{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.}
+    \label{table:exemple2}
+\end{table}
+
+% Conclusió
+\section{Conclusió}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mauris eu sem tempus euismod. Curabitur eget volutpat libero, vel porttitor ligula.
+
+\end{document}
